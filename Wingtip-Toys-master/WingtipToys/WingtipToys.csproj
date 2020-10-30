@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +49,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -210,6 +214,36 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\logo.jpg" />
     <Content Include="logo.jpg" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\DEF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DEF.edmx</DependentUpon>
+      <LastGenOutput>DEF.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DEF.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DEF.edmx</DependentUpon>
+      <LastGenOutput>DEF.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\WingtipToys.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WingtipToys.edmx</DependentUpon>
+      <LastGenOutput>WingtipToys.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\WingtipToys.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WingtipToys.edmx</DependentUpon>
+      <LastGenOutput>WingtipToys.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -219,6 +253,27 @@
     <Content Include="Catalog\Images\Thumbs\Thumbs.db" />
     <Content Include="Checkout\Web.config" />
     <Content Include="Admin\Web.config" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\DEF.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DEF.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DEF.edmx.diagram">
+      <DependentUpon>DEF.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\WingtipToys.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WingtipToys.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\WingtipToys.edmx.diagram">
+      <DependentUpon>WingtipToys.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
@@ -393,14 +448,84 @@
     <Compile Include="Logic\PayPalFunctions.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
-    <Compile Include="Models\CartItem.cs" />
-    <Compile Include="Models\Category.cs" />
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CartItem.cs">
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEF.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEF.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\OrderDetail.cs" />
-    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
+    <Compile Include="Models\WingtipToys.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipToys.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WingtipToys.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipToys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WingtipToys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WingtipToys.edmx</DependentUpon>
+    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -448,6 +573,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

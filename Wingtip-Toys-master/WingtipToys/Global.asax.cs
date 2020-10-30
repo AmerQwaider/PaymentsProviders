@@ -25,7 +25,7 @@ namespace WingtipToys
 
             // Create the administrator role and user.
             RoleActions roleActions = new RoleActions();
-            roleActions.createAdmin();
+           // roleActions.createAdmin();
 
             // Add Routes.
             RegisterCustomRoutes(RouteTable.Routes);

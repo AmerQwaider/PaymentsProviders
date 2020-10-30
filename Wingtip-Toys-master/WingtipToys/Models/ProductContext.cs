@@ -4,7 +4,7 @@ namespace WingtipToys.Models
   public class ProductContext : DbContext
   {
     public ProductContext()
-      : base("WingtipToys")
+      : base("WINGTIPTOYSEntities")
     {
     }
     public DbSet<Category> Categories { get; set; }

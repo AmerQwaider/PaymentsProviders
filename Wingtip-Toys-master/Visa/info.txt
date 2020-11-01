@@ -1,0 +1,8 @@
+AmerQwaider
+adawod69@yahoo.com
+$A*4hZ3Cw6J8Jw2
+
+https://developer.mastercard.com/account/log-in?username=AmerQwaider&email=adawod69%40yahoo.com&verifyCode=1ilpe3nkf50pp&locale=en_US
+
+https://developer.mastercard.com/platform/documentation/security-and-authentication/generating-and-configuring-a-mastercard-api-client/
+https://developer.mastercard.com/dashboard

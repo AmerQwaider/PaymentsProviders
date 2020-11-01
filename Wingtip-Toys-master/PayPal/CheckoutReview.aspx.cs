@@ -24,7 +24,6 @@ namespace PayPal
 
 					var myOrder = new Order();
 					myOrder.OrderDate = Convert.ToDateTime(decoder["TIMESTAMP"].ToString());
-					myOrder.Username = User.Identity.Name;
 					myOrder.FirstName = decoder["FIRSTNAME"].ToString();
 					myOrder.LastName = decoder["LASTNAME"].ToString();
 					myOrder.Address = decoder["SHIPTOSTREET"].ToString();

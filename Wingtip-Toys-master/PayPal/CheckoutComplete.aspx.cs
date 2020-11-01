@@ -70,7 +70,6 @@ namespace PayPal
 					Response.Redirect("CheckoutError.aspx?" + retMsg);
 				}
 			}
-
 		}
 	}
 }

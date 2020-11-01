@@ -65,27 +65,17 @@ namespace PayPal
 					{
 						CartItem obj = new CartItem();
 						obj.ProductName = "ProductName " + i.ToString();
-						obj.UnitPrice = "Price " + i.ToString();
-						obj.Quantity = "Quantity " + i.ToString();
+						obj.UnitPrice = "1";
+						obj.Quantity = "1";
+						obj.OrderId = 1;
+						obj.Username = "";
+						obj.ProductId = 1;
+						
 
 						myOrderList.Add(obj);
 					}
 
-					//// Add OrderDetail information to the DB for each product purchased.
-					//for (int i = 0; i < myOrderList.Count; i++)
-					//{
-					//	// Create a new OrderDetail object.
-					//	var myOrderDetail = new OrderDetail();
-					//	myOrderDetail.OrderId = myOrder.OrderId;
-					//	myOrderDetail.Username = User.Identity.Name;
-					//	myOrderDetail.ProductId = myOrderList[i].ProductId;
-					//	myOrderDetail.Quantity = myOrderList[i].Quantity;
-					//	myOrderDetail.UnitPrice = myOrderList[i].Product.UnitPrice;
-
-					//	// Add OrderDetail to DB.
-					//	_db.OrderDetails.Add(myOrderDetail);
-					//	_db.SaveChanges();
-					//}
+				
 
 					// Set OrderId.
 					Session["currentOrderId"] = myOrder.OrderId;

@@ -15,7 +15,7 @@ namespace PayPal
 		{
 
 			//	Session["payment_amt"] = usersShoppingCart.GetTotal();
-			Session["payment_amt"] = "50";
+			Session["payment_amt"] = "5";
 			Response.Redirect("CheckoutStart.aspx");
 		}
 	}

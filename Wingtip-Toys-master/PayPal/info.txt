@@ -1,0 +1,40 @@
+sb-rnwvi3624325@personal.example.com
+
+
+TestCHKOUT
+pass:ZB5bj6&t
+adawod69@yahoo.com
+John Doe
+mobile 9625797854
+acct id : PUXLN56UM6J9W
+country JO 
+ API credentials
+
+AccessToken
+access_token$sandbox$wkc3c2dpkgg6qc4p$ded7b648203261cb6cc63d692fa7e04d
+access_token$sandbox$wkc3c2dpkgg6qc4p$ded7b648203261cb6cc63d692fa7e04d
+
+Sandbox account
+adawod69@yahoo.com
+Client ID
+ATWz8KxstMPRH1Ivz80-wzy3G8hAXetgRykKOXTkZOjKc7LNbXpeIVvpFZo_0YeigcJwq3pHUXOyqbMN
+Secret
+EAyepHQ_2cTes5he3Y3VCWi_jWZm2QvUAhXD-MLlIJJfV5w-8FfdusVdZ2m1Rr-EcGjmXJ4D5OHMEJMn
+
+
+
+
+
+
+
+
+--------------
+amerqw@yahoo.com
+pass: +^W1Q-qM
+
+Username:
+sb-aseap949237_api1.business.example.com
+Password:
+RXKKKBDWBEBHHBZW
+Signature:
+AYAOdapfacVgs6-NlGjvpAOzwI2vAk00N1SWZJPu5LCj1Pvx4UszErWO

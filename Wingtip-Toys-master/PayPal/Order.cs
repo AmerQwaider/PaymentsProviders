@@ -4,7 +4,6 @@ namespace PayPal
 {
 	public class Order
 	{
-
 		public DateTime OrderDate { get; set; }
 		public int OrderId { get; set; }
 		public string Username { get; set; }

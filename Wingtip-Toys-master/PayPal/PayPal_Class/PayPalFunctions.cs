@@ -27,9 +27,9 @@ public class NVPAPICaller
 	//Replace <Your API Username> with your API Username
 	//Replace <Your API Password> with your API Password
 	//Replace <Your Signature> with your Signature
-	public string APIUsername = "";
-	private string APIPassword = "";
-	private string APISignature = "";
+	public string APIUsername = "sb-aseap949237_api1.business.example.com";
+	private string APIPassword = "RXKKKBDWBEBHHBZW";
+	private string APISignature = "AYAOdapfacVgs6-NlGjvpAOzwI2vAk00N1SWZJPu5LCj1Pvx4UszErWO";
 	private string Subject = "";
 	private string BNCode = "PP-ECWizard";
 
@@ -74,8 +74,8 @@ public class NVPAPICaller
 		{
 			CartItem obj = new CartItem();
 			obj.ProductName = "ProductName " + i.ToString();
-			obj.UnitPrice = "Price " + i.ToString();
-			obj.Quantity = "Quantity " + i.ToString();
+			obj.UnitPrice = "1";
+			obj.Quantity = "1";
 
 			myOrderList.Add(obj);
 		}

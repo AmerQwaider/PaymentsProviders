@@ -126,6 +126,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="PayPal_Class\Getting Started with ASP.NET 4.5 Web Forms and Visual Studio 2013 - Wingtip Toys Tutorial Series.pdf" />
+    <Content Include="PayPal_Class\Getting Started with ASP.NET 4.5 Web Forms and Visual Studio 2013.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
